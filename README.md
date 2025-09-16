@@ -3,17 +3,14 @@ This project is a machine learning web API that predicts the selling price of us
 It is built using TensorFlow/Keras, Flask, and deployed with Docker.
 
 # Project Structure
-.
-├── cardekho_dataset.csv
-├── Car_Price_Prediction.ipynb
-├── Car_Price_Prediction.py
-├── predict.py
-├── nn_model.keras
-├── preprocessor.joblib
-├── scaler.joblib
-├── Pipfile
-├── Pipfile.lock
-└── Dockerfile
+cardekho_dataset.csv         # dataset
+Car_Price_Prediction.ipynb   # model training notebook
+predict.py                    # Flask API
+nn_model.keras                # trained model
+preprocessor.joblib           # preprocessing pipeline
+scaler.joblib                  # target scaler
+Pipfile / Pipfile.lock         # dependencies
+Dockerfile                     # container setup
 # Features
 Preprocesses categorical and numerical data using ColumnTransformer
 Deep learning regression model built with TensorFlow/Keras
